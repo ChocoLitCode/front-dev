@@ -1,0 +1,50 @@
+<html lang="eng-us">
+    <head>
+        <title>Day Five: Images</title>
+    </head>
+    <body>
+        <h1>Doing two things today</h1>
+        <p>Cheers for the 5<sup>th</sup> day! Today I learned about images and the importance of putting alternative text to it so that screen reader app can help describe the image to people who cannot see the image. I also learned other details to check before inserting images to a website. But while I'm at it, I am quite botherd by my folder structure.</p>
+        <h2>Redoing folder structure</h2>
+         <p>Yesterday's coding practice made me think about folder structure. What I did yesterday was create a folder for each page. I searched on the internet if what I did is necessary and it turned out it's not. Instead, the key is to compile related files. As a result, I had to redo my folder structure since my website is small to accomodate different sections for now. </p>
+       <ul>
+            <li>Link to References read:
+                <ul>
+                    <li><a href="https://superdev.gitbook.io/300devdays/html-hypertext-markup-language/html-folder-structure" target="_blank">HTML Folder Structure|300devdays</a></li>
+                    <li><a href="https://stackoverflow.com/questions/38743108/how-to-organize-folders-when-i-make-a-multiple-page-website" target="_blank">html - How to organize folders when I make a multiple page website? - Stack Overflow</a></li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Adding images to my site</h2>
+        <p>Finally! I can add pictures to my website now.</p>
+        <figure>
+            <img src="../image/dog.jpg" alt="Adorable brown and white basenji dog smiling and giving a high five isolated on white" />
+            <br />
+            <figcaption><i>This is how you add caption: </i>Picture of A Dog <q> High-Five </q></figcaption>
+        </figure>
+        <p>This is what it looks like without caption</p>
+        <img src="../image/dog.jpg" alt="Adorable brown and white basenji dog smiling and giving a high five isolated on white" title="Hello!" />
+        <p>So image can also be inserted like this <img src="../image/icon.png" alt="Icon of a girl programmer" /> so it's like in the middle of a text. <strong>img</strong> is an inline element so it can be put inside a block element like a paragraph. But to wrap the text around the image, CSS is used.</p>
+        <h3>Old Codes: Alignment & Dimension</h3>
+        <p><img src="../image/panda.gif" alt="A cute panda pulling a lifebuoy from above" align="right" weight="256" height="256" />Alignment and dimesions are now adjusted using CSS instead of HTML. But some old websites still implement this code. So for the sake of familiarization, I'll be trying this as well but not focus on it. But hey! Four chapters left before I learn CSS. align="middle" makes the first line appear at the middle of the image. </p>
+        <h2>Three Rules to Follow</h2>
+        <ol>
+            <li><strong>Choose Right Image Format</strong>:
+                <ul>
+                    <li>JPEG: For photographs</li>
+                    <li>PNG/GIF: For illustrations or pictures with flat colors(solid)</li>
+                </ul>
+            </li>
+            <br />
+            <li><strong>Choose Right Size</strong>: The dimension of the image you put in the folder should be the same to the dimension of the image on the website. This will ensure the image will show properly and load the image faster.</li>
+            <br />
+            <li><strong>Choose the Right Resolution</strong>: For JPEG and PNG, the resolution should be <strong>72 ppi</strong> max. GIF's resolution is different. It relies on the GIF dimension. </li>
+        </ol>
+        <hr />
+        <p>
+            <a href="day-four.html">Back</a>
+            
+        </p>
+        <p><a href="../index.html">Home</a></p>
+    </body>
+</html>
