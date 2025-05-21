@@ -1,0 +1,64 @@
+<html lang="eng-us">
+    <head>
+        <title>Day Six: Tables</title>
+    </head>
+    <body>
+        <h1>Experimenting with Tables</h1>
+        <p>I will try to incorporate lists, links and images to my table.</p>
+        <h2>Table</h2>
+        <!-- cellpadding attribute is an old code; CSS is used for table style and dimension -->
+        <table cellpadding="8">
+            <tr>
+                <th></th>
+                <th scope="col">Song</th>
+                <th scope ="col">Stream</th>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">Justin Bieber</th>
+                <td>Ghost</td>
+                <td>
+                    <ul>
+                        <li><a href="https://youtu.be/Fp8msa5uYsc?si=VwyrYuZuLCSmpBWL">Watch on Youtube</a></li>
+                        <li><a href="https://open.spotify.com/track/6I3mqTwhRpn34SLVafSH7G?si=a1bf4ece99534a70">Listen on Spotify</a></li>
+                    </ul></td>
+            </tr>
+            <tr>
+                <td>Lonely</td>
+                <!-- width and height attribute is an old code. Use CSS to adjust image size and wrapping style-->
+                <td><a href="https://youtu.be/xQOO2xGQ1Pc?si=kakl6sFKOY6bDsLf"><img width="48" height="48" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube-play" title="Watch on Youtube"/></a>
+                    <a href="https://open.spotify.com/track/3S8jK1mGzQi24ilFb45DAZ?si=ba9b866f5ebc40e1"><img width="48" height="48" src="https://img.icons8.com/fluency/48/spotify.png" alt="spotify" title="Listen on Spotify"/></a>
+                </td>
+            </tr>
+        </table>
+        <h2>Long Table</h2>
+        <table cellpadding="10" width="650">
+            <thead>
+                <th>Test</th>
+                <th>Result</th>
+                <th>Date</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Blood Test</th>
+                     <td>A+</td>
+                      <td>02-28-2022</td>
+                </tr>
+                <tr>
+                    <th>Drug Test</th>
+                    <td>NEG</td>
+                    <td>02-29-2022</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <th></th>
+                <td>Passed</td>
+                <td></td>
+            </tfoot>
+        </table>
+        <p>
+            <a href="day-five.html">Back</a>
+        </p>
+        <p><a href="../index.html">Home</a></p>
+    </body>
+</html>
