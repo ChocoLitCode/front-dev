@@ -1,0 +1,80 @@
+<html lang="eng-us">
+    <head>
+        <title>Day Seven: Forms</title>
+    </head>
+    <body>
+        <h1>Inconsistency in Routine</h1>
+        <p>YI wasn't able to code for a few days bacause I had a busy schedule and was exhausted. Therefore my <em>day seven</em> started later than usual. I hope I can still finish the book for 19 days though! Hope the next chapters are short and easy to understand. </p>
+        <h2>Let's get into it!</h2>
+        <p><em>Quick Tip:</em>All form controls <strong>should have a name and value(depends) attribute</strong>. For buttons though, only a value attribute is added.</p>
+        <!--Use action and method attribute if yo already have a URL which will receive the information from the form. For method, there are get and post. Get is the default-->
+        <form>      
+            <fieldset>
+                <legend>PERSONAL INFORMATION</legend>
+                <p>FULL NAME</p>
+                <!--The label allows showing the text cursor once it is clicked  -->
+                <!--name attribute is for classification of information-->
+                <label>SURNAME: <input type="text" name="surname" required="required" /></label> 
+                <label>FIRST NAME: <input type="text" name="first-name" required="rewuired"/></label>
+                <label>M.I. <input type="text" name="mid-in" required="required"/></label>
+                <br />
+                <!--2nd way of using label: If you want the input to be on the left side-->
+                <!--value attribute is the value of the input-->
+                <!--ex: surname: Gonzales-->
+                <!--sex:m-->
+                <input id="male" type="radio" name="sex" value="m"/>
+                <label for="male">Male</label>
+                <input id="female" type="radio" name="sex" value="f" />
+                <label for="female">Female</label>
+                <br />
+                <p>Date of Birth:<input type="date"/>
+                 Birthplace: 
+                <select name="birthplace">
+                        <option value="calabarzon">CALABARZON</option>
+                        <option value="ncr">NCR</option>
+                </select></p> 
+                <p>Email address: <input type="email" name="email"/></p>
+               <!--extra-->
+                <p>Phone Number: <input type="tel" name="number" maxlength="11"/></p>
+            </fieldset>
+            <fieldset>
+                <legend>SURVEY</legend>
+                <p>Do you play Valorant?Why or why not?</p>
+                <textarea name="q1" placeholder="Enter your answer here"></textarea>
+                <p>Which classes do you play often?Pick 1 or more
+                    <br />
+                    <label><input type="checkbox" name="class" value="duelist"/>Duelist</label>
+                    <br />
+                    <label><input type="checkbox" name="class" value="initiator"/>Initiator</label>
+                    <br />
+                    <label><input type="checkbox" name="class" value="controller"/>Controller</label>
+                    <br />
+                    <label><input type="checkbox" name="class" value="sentinel"/>Sentinel</label>
+                </p>
+                <p>Which 3 agents would you pick in Ascent?Hold Ctrl to select</p>
+                <select name="agents" multiple="multiple">
+                    <option valu="omen">Omen</option>
+                    <option value="iso">Iso</option>
+                    <option value="reyna">Reyna</option>
+                    <option value="jett">Jett</option>
+                    <option value="chamber">Chamber</option>
+                    <option valu="breach">Breach</option>
+                    <option value="neon">Neon</option>
+                </select>
+                <p>Upload your favorite card in Valorant</p>
+                <input type="file" name="card" />
+                <input type="submit" value="Upload" />
+            </fieldset>
+            <br />
+            <input type="image" src="../image/icon.png" alt="submit" />
+            <button><img src="../image/icon.png" alt="submit"/>Submit</button>
+       <!--hidden type in input-->
+        </form>
+        <form action="https://www.example.org/search.php" >
+            <input type="search" name="search" />
+            <input type="submit" value="Search" /> 
+            <br />
+            <input type="password" name="password" maxlength="8" placeholder="Enter WiFI password"/>
+        </form>
+    </body>
+</html>
