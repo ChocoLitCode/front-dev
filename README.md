@@ -1,5 +1,6 @@
 # front-dev
 Goal: Complete a website using HTML and CSS in 19 Days
+Github Page: https://chocolitcode.github.io/front-dev/test-site
 
 This is the start of my front-end development journey. Coding advice is much appreciated.
 
