@@ -1,4 +1,7 @@
-* {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+* {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
-h1 {background-color: tomato;
+h1 {padding: 3%;
+    background-color: tomato;
     color: azure;}
+
